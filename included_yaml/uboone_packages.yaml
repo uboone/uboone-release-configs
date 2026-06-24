@@ -2,3 +2,6 @@ packages:
   ubutil:
     require:
     - '@=10.20.07'
+  uboonedata:
+    require:
+    - '@=10.20.04'

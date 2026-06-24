@@ -13,3 +13,4 @@ definitions:
 #  - ubreco%build_compiler
 #  - ubsim%build_compiler
   - ubutil%build_compiler
+  - uboonedata%build_compiler
