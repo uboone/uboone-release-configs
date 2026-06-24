@@ -7,10 +7,10 @@ definitions:
   - ubraw%build_compiler
   - ubevt%build_compiler
   - ubcrt%build_compiler
+  - ubsim%build_compiler
 #  - ubana%build_compiler
 #  - ubdl%build_compiler
 #  - ubcv%build_compiler
 #  - ublite%build_compiler
 #  - uboonecode%build_compiler
 #  - ubreco%build_compiler
-#  - ubsim%build_compiler

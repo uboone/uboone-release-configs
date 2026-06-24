@@ -20,3 +20,6 @@ packages:
   ubcrt:
     require:
     - '@=10.21.00'
+  ubsim:
+    require:
+    - '@=10.21.00'
