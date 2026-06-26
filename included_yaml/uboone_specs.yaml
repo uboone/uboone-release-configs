@@ -1,6 +1,6 @@
 definitions:
 - specs_uboone:
-#  - uboonedata
+  - uboonedata
   - ubutil%build_compiler
   - ubobj%build_compiler
   - ubcore%build_compiler
