@@ -14,4 +14,3 @@ definitions:
   - ublite %build_compiler
   - uboonecode %build_compiler
   - ubdl %build_compiler
-  - larbatch
