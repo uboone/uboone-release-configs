@@ -38,3 +38,6 @@ packages:
   uboonecode:
     require:
     - '@=10.22.00'
+  larbatch:
+    require:
+    - '@=01.61.05'
