@@ -36,7 +36,7 @@ spack:
     - included_yaml/fife_specs.yaml
 
   - git: https://github.com/uboone/uboone-release-configs
-    branch: main
+    tag: uboone-10.22.00
     paths:
     - included_yaml/uboone_packages.yaml
     - included_yaml/uboone_specs.yaml
@@ -57,7 +57,7 @@ spack:
     reuse:
       from:
       - type: environment
-        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_22_00-unified-cuda-python-3_11-trimmed-rc1
+        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_22_00-unified-cuda-python-3_11-trimmed-rc2
   view: false
   packages:
     all:
