@@ -53,7 +53,7 @@ spack:
       install_tree: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/opt/spack
 
   concretizer:
-    unify: true
+    unify: when_possible
     reuse:
       from:
       - type: environment
