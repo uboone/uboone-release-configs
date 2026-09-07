@@ -42,22 +42,22 @@ spack:
     - included_yaml/uboone_specs.yaml
 
   specs:
-    - $specs_art
-    - $specs_nusofthep
-    - $specs_larsoft
-    - $fife_specs
-    - $specs_uboone
+  - $specs_art
+  - $specs_nusofthep
+  - $specs_larsoft
+  - $fife_specs
+  - $specs_uboone
 
   upstreams:
     cvmfs-larsoft:
       install_tree: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/opt/spack
 
   concretizer:
-    unify: when_possible
+    unify: true
     reuse:
       from:
       - type: environment
-        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_24_00-unified-cuda-python-3_11-trimmed-rc1
+        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_24_00-unified-cuda-python-3_11-trimmed-rc2
   view: false
   packages:
     all:
@@ -74,10 +74,10 @@ spack:
       - x86_64_v3
     python:
       require:
-      - "@:3.11"
+      - '@:3.11'
     cuda:
       require:
-      - "@12.6"
+      - '@12.6'
     geant4:
       require:
       - build_type=RelWithDebInfo
@@ -104,10 +104,12 @@ spack:
       - +xrootd
     nusystematics:
       require:
-      - "@1"
+      - '@1'
     systematicstools:
       require:
-      - "@1"
+      - '@1'
     trace:
       require:
-      - "@:v3_23_00"
+      - '@:v3_23_00'
+  mirrors:
+    uboone: https://spack-cache-1.fnal.gov/binaries/uboone
