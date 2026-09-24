@@ -1,4 +1,4 @@
-˘packages:
+packages:
   uboonedata:
     require:
     - '@=10.20.04'
@@ -41,8 +41,8 @@
   genie-xsec:
     require:
     - '@=3.06.00'
-    - tune_name=G1810a0211a-k250-e1000
+    - 'tune_name=G1810a0211a-k250-e1000'
   genie-phyopt:
     require:
     - '@=3.06.00'
-    - phyopt_name=dkcharmtau
+    - 'phyopt_name=dkcharmtau'
