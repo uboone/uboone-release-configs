@@ -14,5 +14,5 @@ definitions:
   - ublite %build_compiler
   - uboonecode %build_compiler
   - ubdl %build_compiler
-  - genie_xsec
-  - genie_phyopt
+  - genie-xsec
+  - genie-phyopt
