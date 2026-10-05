@@ -18,7 +18,7 @@ spack:
   # Packages defintions.
   # These are version and variant requirements for a package suite
   - git: https://github.com/LArSoft/larsoft-release-configs
-    tag: larsoft-10.26.00
+    tag: larsoft-10.27.00
     paths:
     - included_yaml/larsoft-packages.yaml
     - included_yaml/larsoft-specs.yaml
@@ -36,15 +36,15 @@ spack:
     - included_yaml/fife_specs.yaml
 
   - git: https://github.com/uboone/uboone-release-configs
-    tag: uboone-10.26.00
+    tag: uboone-10.27.00
     paths:
     - included_yaml/uboone_packages.yaml
     - included_yaml/uboone_specs.yaml
 
   specs:
-  - $specs_art
-  - $specs_nusofthep
-  - $specs_larsoft
+  #- $specs_art
+  #- $specs_nusofthep
+  #- $specs_larsoft
   - $fife_specs
   - $specs_uboone
 
@@ -53,7 +53,7 @@ spack:
     reuse:
       from:
       - type: environment
-        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_26_00-unified-cuda-python-3_11-trimmed-rc1
+        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_27_00-unified-cuda-python-3_11-trimmed-rc1
   view: false
   packages:
     all:
