@@ -46,3 +46,6 @@ packages:
     require:
     - '@=3.06.00'
     - 'phyopt_name=dkcharmtau'
+  wire-cell-prototype:
+    require:
+    - '@=00.18.01'

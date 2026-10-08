@@ -16,3 +16,4 @@ definitions:
   - ubdl %build_compiler
   - genie-xsec
   - genie-phyopt
+  - wire-cell-prototype %build_compiler
