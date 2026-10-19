@@ -55,7 +55,7 @@ spack:
       - type: environment
         path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_28_00-unified-cuda-python-3_11-trimmed-rc1
       - type: environment
-        path: /cvmfs/uboone.opensciencegrid.org/spack-uboone-v1.1.1/var/spack/environments/uboonecode-v10_27_00-rc2/
+        path: /cvmfs/uboone.opensciencegrid.org/spack-uboone-v1.1.1/var/spack/environments/uboonecode-v10_27_00-rc2
   view: false
   packages:
     all:
