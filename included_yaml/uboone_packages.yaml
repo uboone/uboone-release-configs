@@ -49,6 +49,9 @@ packages:
   geant4reweight:
     require:
     - '@=01.24.01'
+  ubdl:
+    require:
+    - '@=2.me.06.03.prod.01'
   wire-cell-prototype:
     require:
     - '@=00.18.01'

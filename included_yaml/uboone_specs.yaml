@@ -17,4 +17,5 @@ definitions:
   - genie-xsec
   - genie-phyopt
   - geant4reweight %build_compiler
+  - ubdl %build_compiler
   - wire-cell-prototype %build_compiler
