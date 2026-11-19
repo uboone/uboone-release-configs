@@ -55,6 +55,9 @@ packages:
   ubdl:
     require:
     - '@=2.me.06.03.prod.01'
+  uboonedaq-datatypes:
+    require:
+    - '@=6.22.07'
   wire-cell-prototype:
     require:
     - '@=00.18.01'

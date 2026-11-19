@@ -19,4 +19,5 @@ definitions:
   - uboone-photon-propagation
   - geant4reweight %build_compiler
   - ubdl %build_compiler
+  - uboonedaq-datatypes %build_compiler
   - wire-cell-prototype %build_compiler
