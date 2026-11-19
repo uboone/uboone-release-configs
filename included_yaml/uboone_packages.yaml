@@ -51,7 +51,7 @@ packages:
     - '@=01.01.00'
   geant4reweight:
     require:
-    - '@=01.24.01'
+    - '@=01.24.00'
   ubdl:
     require:
     - '@=2.me.06.03.prod.01'
