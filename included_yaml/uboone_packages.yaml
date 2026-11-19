@@ -58,6 +58,9 @@ packages:
   uboonedaq-datatypes:
     require:
     - '@=6.22.07'
+  swtrigger:
+    require:
+    - '@=02.03.00'
   wire-cell-prototype:
     require:
     - '@=00.18.01'

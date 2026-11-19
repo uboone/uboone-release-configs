@@ -20,4 +20,5 @@ definitions:
   - geant4reweight %build_compiler
   - ubdl %build_compiler
   - uboonedaq-datatypes %build_compiler
+  - swtrigger %build_compiler
   - wire-cell-prototype %build_compiler
