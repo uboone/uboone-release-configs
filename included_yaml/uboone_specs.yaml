@@ -16,6 +16,7 @@ definitions:
   - ubdl %build_compiler
   - genie-xsec
   - genie-phyopt
+  - uboone-photon-propagation
   - geant4reweight %build_compiler
   - ubdl %build_compiler
   - wire-cell-prototype %build_compiler

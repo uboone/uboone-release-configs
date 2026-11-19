@@ -46,6 +46,9 @@ packages:
     require:
     - '@=3.06.00'
     - 'phyopt_name=dkcharmtau'
+  uboone-photon-propagation:
+    require:
+    - '@=01.01.00'
   geant4reweight:
     require:
     - '@=01.24.01'
