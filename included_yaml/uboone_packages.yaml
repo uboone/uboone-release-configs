@@ -46,6 +46,9 @@ packages:
     require:
     - '@=3.06.00'
     - 'phyopt_name=dkcharmtau'
+  geant4reweight:
+    require:
+    - '@=01.24.01'
   wire-cell-prototype:
     require:
     - '@=00.18.01'
