@@ -9,34 +9,34 @@ spack:
   # Defines the compiler (gcc or llvm/clang) and version.
 
   - git: https://github.com/art-framework-suite/art-release-configs
-    tag: art-3.14.04
+    branch: main
     paths:
-    - included_yaml/gcc-12-toolchain.yaml
     - included_yaml/packages-art.yaml
     - included_yaml/specs-art.yaml
 
   # Packages defintions.
   # These are version and variant requirements for a package suite
   - git: https://github.com/LArSoft/larsoft-release-configs
-    tag: larsoft-10.32.00
+    tag: larsoft-11.00.00
     paths:
     - included_yaml/larsoft-packages.yaml
     - included_yaml/larsoft-specs.yaml
+    - included_yaml/gcc-13-toolchain.yaml
 
   - git: https://github.com/NuSoftHEP/nusofthep-release-configs
-    tag: nusofthep-3.22.01
+    tag: nusofthep-3.24.00
     paths:
     - included_yaml/nusofthep-packages.yaml
     - included_yaml/nusofthep-specs.yaml
 
-  - git: https://github.com/fnal-fife/fife-release-configs
-    tag: 2.8.0.4
+  - git: https://github.com/gartung/fife-release-configs
+    branch: update-reqs
     paths:
     - included_yaml/fife_packages.yaml
     - included_yaml/fife_specs.yaml
 
   - git: https://github.com/uboone/uboone-release-configs
-    tag: uboone-10.32.00
+    tag: uboone-11.00.00
     paths:
     - included_yaml/uboone_packages.yaml
     - included_yaml/uboone_specs.yaml
@@ -53,9 +53,9 @@ spack:
     reuse:
       from:
       - type: environment
-        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v10_32_00-unified-cuda-python-3_11-gcc-13_4-trimmed-rc1
+        path: /cvmfs/larsoft.opensciencegrid.org/spack-fnal-v1.1.1/var/spack/environments/larsoft-v11_00_00-unified-cuda-python-3_11-trimmed-rc1
       - type: environment
-        path: /cvmfs/uboone.opensciencegrid.org/spack-uboone-v1.1.1/var/spack/environments/uboonecode-v10_27_00-rc2
+        path: /cvmfs/uboone.opensciencegrid.org/spack-uboone-v1.1.1/var/spack/environments/uboonecode-v10_32_00-rc1
   view: false
   packages:
     all:
@@ -67,7 +67,7 @@ spack:
       variants:
       - generator=ninja
       - build_type=Release
-      - cxxstd=17
+      - cxxstd=20
       target:
       - x86_64_v3
     gcc:
@@ -83,12 +83,11 @@ spack:
       require:
       - build_type=RelWithDebInfo
       - generator=ninja
-      - cxxstd=17
     grpc:
       require:
       - build_type=RelWithDebInfo
       - generator=ninja
-      - cxxstd=17
+      - "@:1.50.0"
     py-tensorflow:
       require:
       - +cuda
